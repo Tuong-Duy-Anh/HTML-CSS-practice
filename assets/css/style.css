@@ -1,0 +1,124 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* config */
+html,
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+  color: #4a4a4a;
+}
+
+/* layout */
+
+.nav-bar {
+  padding: 0 24px;
+  display: flex;
+  width: 100vw;
+  height: 55px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-bar::after {
+  content: "";
+  background-color: #ededed;
+  height: 0.5px;
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.nav-bar .left-item {
+  height: 55px;
+  line-height: 55px;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-bar .left-item div {
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.nav-bar .left-item div:not(:first-child):hover {
+  border-bottom: 2px solid #191919;
+}
+
+.nav-bar .left-item h3 {
+  font-weight: 700;
+}
+
+.nav-bar .btn-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-wrap button {
+  height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 17px;
+  border: none;
+  border-radius: 100px;
+  text-transform: capitalize;
+  transition: all 0.3 ease;
+  will-change: all;
+  cursor: pointer;
+}
+
+.btn-wrap .btn-login {
+  border: 1px solid #ededed;
+  background-color: #fff;
+}
+
+.btn-wrap .btn-login:hover {
+  background: #f1f1f1;
+  border-color: #e8e8e8;
+}
+
+.btn-wrap .btn-signup {
+  border: none;
+  background-color: #0057ff;
+  color: #fff;
+}
+
+.btn-wrap .btn-signup:hover {
+  background: #003ecb;
+  border-color: transparent;
+}
+
+.btn-wrap .adobe-icon {
+  margin-left: 32px;
+  height: 100%;
+}
+
+.btn-wrap .adobe-icon:hover {
+  opacity: 0.8;
+}
+
+.adobe-icon a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.adobe-icon a p {
+  font-size: 12px;
+  font-weight: 800;
+}
